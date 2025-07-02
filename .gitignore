@@ -11,15 +11,14 @@ pids
 *.pid
 *.seed
 *.pid.lock
-
-# Dependency directories
+ directories
 node_modules/
 jspm_packages/
 .env
 .env.*
 # TypeScript cache
 *.tsbuildinfo
-
+.env.sample
 # Optional npm cache directory
 .npm
 
