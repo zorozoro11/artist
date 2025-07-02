@@ -40,3 +40,7 @@ build
 # Misc
 .DS_Store
 *.pem
+
+# Ignore environment variable files
+.env
+.env.*

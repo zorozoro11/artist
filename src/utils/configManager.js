@@ -1,8 +1,9 @@
 import path from 'path';
 import fs from 'fs/promises';
-import xdg from 'xdg-basedir';
+import * as xdg from 'xdg-basedir'; // THE CORRECT IMPORT SYNTAX
 
-const CONFIG_DIR = path.join(xdg.config, 'ai-git-artist');
+// The 'xdg' object now holds all exports, like 'config'.
+const CONFIG_DIR = path.join(xdg.config, 'ai-git-artist'); 
 const CONFIG_FILE = path.join(CONFIG_DIR, 'repositories.json');
 
 async function ensureConfig() {
